@@ -1,5 +1,3 @@
-<img width="962" height="48" alt="docker3" src="https://github.com/user-attachments/assets/d4cba9c2-5528-44f2-af42-9451884468a8" /># Docker
-
 ## Introduction to Docker and Containers
 
  In 2013, Solomon Hykes introduced Docker, a lightweight containerization platform that revolutionized how applications are built, shipped, and deployed.
