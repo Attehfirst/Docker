@@ -1,9 +1,9 @@
-## Working with Docker Images
+# Working with Docker Images
 
-# What Are Docker Images?
+## What Are Docker Images?
 Docker images are lightweight, portable, and self-contained blueprints for containers. Each image packages everything an application needs—code, runtime, libraries, and system dependencies—based on instructions defined in a Dockerfile.
 
-# Pulling Images from Docker Hub
+## Pulling Images from Docker Hub
 Docker Hub is a public image registry hosting thousands of ready-to-use Docker images. To download an image to your system, use the docker pull command:
 ```
 docker pull ubuntu
@@ -36,10 +36,10 @@ Executing this command provides a comprehensive list of all the images stored lo
 
 <img width="715" height="78" alt="image" src="https://github.com/user-attachments/assets/cb5ecb74-a805-46a9-9500-d6a84546028a" />
 
-Dockerfile Overview
+## Dockerfile Overview
 A Dockerfile is a plain text file that defines a series of instructions for building a Docker image. It acts as a blueprint for setting up a consistent, reproducible environment—specifying how to install dependencies, copy files, and configure the application.
 
-Writing a Dockerfile (Using NGINX)
+## Writing a Dockerfile (Using NGINX)
 In this example, we’ll use the official nginx image to serve a static HTML file.
 NGINX is a high-performance open-source web server, often used for load balancing, caching, and reverse proxying.
 
@@ -95,6 +95,39 @@ docker ps -a
 
 
 <img width="720" height="35" alt="image" src="https://github.com/user-attachments/assets/19c93be0-b4fb-466c-9879-bfa95a386acb" />
+
+We can access the content of our browser with  http://54.226.254.180:8080/
+<img width="1267" height="155" alt="image" src="https://github.com/user-attachments/assets/c715e57a-f798-493c-89b8-da56c072426b" />
+
+## Pushing Docker Images To Docker Hub
+
+Let’s recall our git project, where we push changes made on our local computer to a remote repository (github) so everyone can track the chages we made and also collaborate on it. Now that we have created a docker images on our own computer, we need to think about how to reuse this image in the future or how do people in other region make use of this image and possibly collaborate on it. This is where Docker Hub comes in. Let’s go ahead and push our image to docker hub
+
+i. Create an account on Docker Hub if you don’t have one.
+
+ii. Create a repository on docker hub
+
+iii. Tag Your Docker Image Before pushing, ensure that your Docker image is appropriately tagged. You typically tag your image with your Docker Hub username and the repository name.
+
+<img width="718" height="25" alt="image" src="https://github.com/user-attachments/assets/6ce7aa25-053c-4ffa-8fd4-98885758d3b2" />
+
+iv. Login to Docker Hub and input your username and password
+
+<img width="718" height="117" alt="image" src="https://github.com/user-attachments/assets/142bc45b-68b4-4f63-bd65-4c2d1dbd4473" />
+
+v. Push the image to Docker hub
+
+<img width="714" height="204" alt="image" src="https://github.com/user-attachments/assets/1778ea67-8a36-45d2-81dc-a50791ba7d30" />
+
+vi. Verify the image is in your Docker hub repository
+
+<img width="1008" height="433" alt="image" src="https://github.com/user-attachments/assets/d776d11b-4173-4ebc-bda5-b8d475593f0a" />
+
+
+
+
+
+
 
 
 
