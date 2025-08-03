@@ -35,4 +35,23 @@ This command starts a container in the background, allowing you to continue usin
 
 Containers have a lifecycle that includes creating, starting, stopping, and restarting. Once a container is created, it can be started and stopped multiple times.
 
+## Starting, Stopping, and Restarting Containers
+
+```
+#To start a stopped container:
+docker start container_name
+
+#To stop a running container:
+docker stop container_name
+
+#To restart a container:
+docker restart container_name
+
+#Removing Containers
+docker rm container_name
+
+#This deletes the container, but keep in mind that the associated image remains on your system.
+
+```
+
 
