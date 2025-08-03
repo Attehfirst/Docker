@@ -1,4 +1,4 @@
-# WOrking with Docker Containers
+# Working with Docker Containers
 
 ## Introduction to Docker Containers
 
@@ -53,5 +53,44 @@ docker rm container_name
 #This deletes the container, but keep in mind that the associated image remains on your system.
 
 ```
+
+## Task: Docker Container Operations
+
+1. Start a Container and Run a Simple Command:
+
+- Use an official Ubuntu image to start a container. If you don’t have the image, you can pull it from docker hub
+- Run a simple command within the container, such as displaying the system information.
+- Stop the Container and Verify Its Status:
+  
+<img width="1291" height="151" alt="image" src="https://github.com/user-attachments/assets/97715d7d-b9f6-412a-90f6-7d0d57d6121d" />
+
+<img width="1292" height="37" alt="image" src="https://github.com/user-attachments/assets/ae1e5a9b-ba80-4a20-bb73-c9cbd77de2a7" />
+
+
+2. Stop the running container
+- Verify that the container is stopped
+- Note the status column to confirm the container’s status.
+- Restart the Container and Observe Changes:
+
+  <img width="1290" height="118" alt="image" src="https://github.com/user-attachments/assets/a9bd5ddf-da9e-41e1-ae20-1bbf2babc279" />
+
+<img width="1293" height="154" alt="image" src="https://github.com/user-attachments/assets/f14bf5f5-94a6-43a7-b3b7-66bd8940a775" />
+
+
+3. Restart the stopped container
+- Verify the container’s status again to ensure it’s running
+- Observe any changes or differences in the container’s behavior after the restart.
+- Remove the Container:
+
+  <img width="1288" height="142" alt="image" src="https://github.com/user-attachments/assets/a9472a41-bea4-47f1-a5ae-997f58f488ff" />
+
+
+4. Stop the running container (if it’s still running)
+- Remove the container
+- Verify that the container is removed
+- Confirm that the container is no longer listed.
+
+
+
 
 
